@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - NEIBA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Marca -->
+    <div class="brand-section">
+        <h1>NEIBA</h1>
+    </div>
+
+    <!-- Sección de Inicio de Sesión -->
+    <main>
+        <section class="login-section">
+            <h1>Iniciar Sesión</h1>
+            <p>Elige tu rol para acceder a la plataforma.</p>
+
+            <!-- Opciones de rol -->
+            <div class="role-selection">
+                <button id="client-btn" class="btn">Soy Cliente</button>
+                <button id="lawyer-btn" class="btn">Soy Abogado</button>
+            </div>
+
+            <!-- Formulario de Cliente -->
+            <form id="client-form" action="procesar_login_cliente.php" method="POST" class="login-form" style="display: none;">
+                <h2>Inicio de Sesión - Cliente</h2>
+                <label for="client-email">Correo Electrónico:</label>
+                <input type="email" id="client-email" name="email" placeholder="Escribe tu correo electrónico" required>
+
+                <label for="client-password">Contraseña:</label>
+                <input type="password" id="client-password" name="password" placeholder="Escribe tu contraseña" required>
+
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <div class="login-options">
+                    <a href="registro.html">¿No tienes una cuenta? Crea una aquí.</a>
+                    <a href="recuperar_contrasena.html">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+
+            <!-- Formulario de Abogado -->
+            <form id="lawyer-form" action="procesar_login_abogado.php" method="POST" class="login-form" style="display: none;">
+                <h2>Inicio de Sesión - Abogado</h2>
+                <label for="lawyer-email">Correo Electrónico:</label>
+                <input type="email" id="lawyer-email" name="email" placeholder="Escribe tu correo electrónico" required>
+
+                <label for="lawyer-password">Contraseña:</label>
+                <input type="password" id="lawyer-password" name="password" placeholder="Escribe tu contraseña" required>
+
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <div class="login-options">
+                    <a href="registro_abogado.html">¿No tienes una cuenta? Crea una aquí.</a>
+                    <a href="recuperar_contrasena.html">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2025 NEIBA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Mostrar y ocultar formularios según el rol seleccionado
+        document.getElementById("client-btn").addEventListener("click", function () {
+            document.getElementById("client-form").style.display = "block";
+            document.getElementById("lawyer-form").style.display = "none";
+        });
+
+        document.getElementById("lawyer-btn").addEventListener("click", function () {
+            document.getElementById("lawyer-form").style.display = "block";
+            document.getElementById("client-form").style.display = "none";
+        });
+    </script>
+</body>
+
+</html>
