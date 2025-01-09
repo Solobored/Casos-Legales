@@ -4,86 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma Legal - Inicio</title>
+    <title>NEIBA - Plataforma Legal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Nombre de la Marca -->
-    <div class="brand">
-        <h1>NEIBA</h1>
+    <div class="top-bar">
+        <div class="login">
+            <a href="login.html">Iniciar Sesión</a>
+        </div>
+        <div class="brand">
+            <h1>NEIBA</h1>
+        </div>
     </div>
 
-    <!-- Inicio de Sesión -->
-    <div class="login">
-        <a href="login.html">Iniciar Sesión</a>
-    </div>
-
-    <!-- Navegación -->
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="clientes.html">Soy Cliente</a></li>
                 <li><a href="abogados.html">Soy Abogado</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="selected-nav" id="selectedNav">Inicio</div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Conectando Clientes con Abogados Profesionales</h1>
-        <p>Describe tu caso, encuentra al abogado ideal, y obtén ayuda legal en línea.</p>
-        <a href="registro.html" class="btn">Regístrate Ahora</a>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Conectando Clientes con Abogados Profesionales</h1>
+            <p>Describe tu caso, encuentra al abogado ideal, y obtén ayuda legal en línea.</p>
+            <a href="registro.html" class="btn">Regístrate Ahora</a>
+        </section>
 
-    <!-- Cómo Funciona -->
-    <section class="how-it-works">
-        <h2>Cómo Funciona</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>1. Regístrate</h3>
-                <p>Crea tu perfil como cliente o abogado de forma rápida y sencilla.</p>
+        <section>
+            <h2 class="section-title">Cómo Funciona</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Regístrate</h3>
+                    <p>Crea tu perfil como cliente o abogado de forma rápida y sencilla.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Describe tu Caso</h3>
+                    <p>Los clientes pueden detallar sus necesidades legales para encontrar al abogado perfecto.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Conéctate</h3>
+                    <p>Los abogados seleccionan casos, y la comunicación se gestiona de forma segura en la plataforma.</p>
+                </div>
             </div>
-            <div class="step">
-                <h3>2. Describe tu Caso</h3>
-                <p>Los clientes pueden detallar sus necesidades legales para encontrar al abogado perfecto.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Beneficios</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Para Clientes</h3>
+                    <p>Accede a una amplia red de abogados especializados y recibe asesoría profesional.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Para Abogados</h3>
+                    <p>Encuentra casos relevantes, amplía tu cartera de clientes y gestiona tus casos eficientemente.</p>
+                </div>
             </div>
-            <div class="step">
-                <h3>3. Conéctate</h3>
-                <p>Los abogados seleccionan casos, y la comunicación se gestiona de forma segura en la plataforma.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Lo Que Dicen Nuestros Usuarios</h2>
+            <div class="testimonial">
+                <p>"Gracias a NEIBA, encontré un abogado especializado en contratos que resolvió mi problema rápidamente."</p>
+                <p><strong>- Juan Pérez</strong></p>
             </div>
-        </div>
-    </section>
+            <div class="testimonial">
+                <p>"He ampliado mi red de clientes y gestiono mis casos de manera más eficiente gracias a esta plataforma."</p>
+                <p><strong>- Abogada María López</strong></p>
+            </div>
+        </section>
+    </main>
 
-    <!-- Beneficios -->
-    <section class="benefits">
-        <h2>Beneficios</h2>
-        <div class="benefit">
-            <h3>Para Clientes</h3>
-            <p>Accede a una amplia red de abogados especializados y recibe asesoría profesional.</p>
-        </div>
-        <div class="benefit">
-            <h3>Para Abogados</h3>
-            <p>Encuentra casos relevantes, amplía tu cartera de clientes y gestiona tus casos eficientemente.</p>
-        </div>
-    </section>
-
-    <!-- Testimonios -->
-    <section class="testimonials">
-        <h2>Lo Que Dicen Nuestros Usuarios</h2>
-        <div class="testimonial">
-            <p>"Gracias a NEIBA, encontré un abogado especializado en contratos que resolvió mi problema rápidamente."</p>
-            <p><strong>- Juan Pérez</strong></p>
-        </div>
-        <div class="testimonial">
-            <p>"He ampliado mi red de clientes y gestiono mis casos de manera más eficiente gracias a esta plataforma."</p>
-            <p><strong>- Abogada María López</strong></p>
-        </div>
-    </section>
-
-    <!-- Pie de Página -->
     <footer>
         <p>© 2025 NEIBA. Todos los derechos reservados.</p>
         <nav>
@@ -96,3 +94,4 @@
 </body>
 
 </html>
+

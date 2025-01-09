@@ -1,180 +1,200 @@
-/* Variables de colores */
 :root {
-  --primary-color: #016180; /* Azul oscuro */
-  --secondary-color: #4A8CB0; /* Azul claro */
-  --light-color: #F8EDE5; /* Color beige */
-  --accent-color: #8C5C47; /* Marrón claro */
-  --dark-color: #4C2C17; /* Marrón oscuro */
+  --primary-color: #D4AF37; /* Gold */
+  --secondary-color: #C0C0C0; /* Silver */
+  --light-color: #FFFFFF; /* White */
+  --dark-color: #000000; /* Black */
+  --accent-color: #8C7853; /* Bronze */
 }
 
-/* General */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: var(--light-color);
   color: var(--dark-color);
   line-height: 1.6;
 }
 
-/* Encabezado */
-header {
+.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-color);
-  color: var(--light-color);
+  background-color: var(--dark-color);
   padding: 10px 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
+.brand {
+  order: 2;
+}
+
+.brand h1 {
   margin: 0;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-header nav ul {
+.login {
+  order: 1;
+}
+
+.login a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.login a:hover {
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+  position: relative;
+}
+
+nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   display: flex;
+  justify-content: center;
 }
 
-header nav ul li {
-  margin: 0 10px;
+nav ul li {
+  margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
   text-decoration: none;
-  color: var(--light-color);
+  color: var(--dark-color);
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: color 0.3s;
 }
 
-header nav ul li a:hover,
-header nav ul li a.active {
-  background-color: var(--secondary-color);
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--primary-color);
 }
 
-/* Botón de inicio de sesión */
-header a.login-link {
-  color: var(--light-color);
-  text-decoration: none;
+.selected-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  padding: 5px 0;
   font-weight: bold;
-  margin-right: auto;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
 }
 
-header a.login-link:hover {
-  background-color: var(--secondary-color);
-}
-
-/* Contenedor principal */
 main {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background-color: var(--light-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main h1 {
+.hero {
   text-align: center;
-  color: var(--primary-color);
+  padding: 50px 0;
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
 }
 
-section {
+.hero h1 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-section h2 {
-  color: var(--primary-color);
-}
-
-section p {
-  margin: 10px 0;
-}
-
-/* Botones */
 .btn {
   display: inline-block;
   background-color: var(--primary-color);
-  color: var(--light-color);
+  color: var(--dark-color);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s;
   font-weight: bold;
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: var(--accent-color);
 }
 
-/* Footer */
+.how-it-works,
+.benefits,
+.testimonials {
+  margin-top: 40px;
+}
+
+.steps,
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.step,
+.benefit {
+  flex-basis: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.testimonial {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
 footer {
-  text-align: center;
   background-color: var(--dark-color);
   color: var(--light-color);
-  padding: 10px 20px;
-  margin-top: 20px;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
-footer a {
+footer nav ul {
+  justify-content: center;
+}
+
+footer nav ul li a {
   color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: bold;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Responsivo */
 @media (max-width: 768px) {
-  header {
-      flex-direction: column;
-      align-items: flex-start;
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  header nav ul {
-      flex-direction: column;
-      width: 100%;
+  .brand {
+    order: 1;
+    margin-bottom: 10px;
   }
 
-  header nav ul li {
-      margin: 5px 0;
-      text-align: left;
+  .login {
+    order: 2;
   }
 
-  main {
-      padding: 15px;
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .btn {
-      width: 100%;
-      text-align: center;
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .step,
+  .benefit {
+    flex-basis: 100%;
   }
 }
 
-@media (max-width: 480px) {
-  header h1 {
-      font-size: 1.2rem;
-  }
-
-  header nav ul li a {
-      font-size: 0.9rem;
-  }
-
-  footer {
-      font-size: 0.8rem;
-  }
-}

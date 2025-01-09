@@ -4,23 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abogados - Plataforma Legal</title>
+    <title>Abogados - NEIBA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Marca y Sección Actual -->
-    <div class="brand-section">
-        <h1>NEIBA</h1>
-        <span class="current-section">Soy Abogado</span>
+    <div class="top-bar">
+        <div class="login">
+            <a href="login.html">Iniciar Sesión</a>
+        </div>
+        <div class="brand">
+            <h1>NEIBA</h1>
+        </div>
     </div>
 
-    <!-- Inicio de Sesión -->
-    <div class="login">
-        <a href="login.html">Iniciar Sesión</a>
-    </div>
-
-    <!-- Navegación -->
     <header>
         <nav>
             <ul>
@@ -30,46 +27,47 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="selected-nav" id="selectedNav">Soy Abogado</div>
     </header>
 
-    <!-- Sección Principal para Abogados -->
-    <section class="lawyer-section">
-        <h1>Bienvenido Abogado</h1>
-        <p>Gestiona tus casos y conecta con clientes que necesitan tu ayuda.</p>
-        <div class="actions">
-            <a href="ver_casos.html" class="btn">Ver Casos Disponibles</a>
-            <a href="perfil_abogado.html" class="btn">Editar Perfil</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Bienvenido Abogado</h1>
+            <p>Gestiona tus casos y conecta con clientes que necesitan tu ayuda.</p>
+            <div class="actions">
+                <a href="ver_casos.html" class="btn">Ver Casos Disponibles</a>
+                <a href="perfil_abogado.html" class="btn">Editar Perfil</a>
+            </div>
+        </section>
 
-    <!-- Beneficios para Abogados -->
-    <section class="benefits">
-        <h2>¿Por qué Usar NEIBA?</h2>
-        <div class="benefit">
-            <h3>Acceso a Nuevos Clientes</h3>
-            <p>Conecta con clientes interesados en tus servicios legales en tu área de especialización.</p>
-        </div>
-        <div class="benefit">
-            <h3>Gestión de Casos Simplificada</h3>
-            <p>Administra tus casos y mantente al día con herramientas fáciles de usar.</p>
-        </div>
-        <div class="benefit">
-            <h3>Incrementa tu Visibilidad</h3>
-            <p>Destaca tu experiencia profesional y atrae más oportunidades laborales.</p>
-        </div>
-    </section>
+        <section>
+            <h2 class="section-title">¿Por qué Usar NEIBA?</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Acceso a Nuevos Clientes</h3>
+                    <p>Conecta con clientes interesados en tus servicios legales en tu área de especialización.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Gestión de Casos Simplificada</h3>
+                    <p>Administra tus casos y mantente al día con herramientas fáciles de usar.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Incrementa tu Visibilidad</h3>
+                    <p>Destaca tu experiencia profesional y atrae más oportunidades laborales.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Pasos para Comenzar -->
-    <section class="steps">
-        <h2>¿Cómo Funciona?</h2>
-        <ol>
-            <li><strong>Regístrate:</strong> Crea tu perfil profesional como abogado.</li>
-            <li><strong>Explora Casos:</strong> Busca casos legales relevantes y envía tus propuestas.</li>
-            <li><strong>Conecta:</strong> Comunícate con clientes y gestiona los detalles del caso.</li>
-        </ol>
-    </section>
+        <section>
+            <h2 class="section-title">¿Cómo Funciona?</h2>
+            <ol>
+                <li><strong>Regístrate:</strong> Crea tu perfil profesional como abogado.</li>
+                <li><strong>Explora Casos:</strong> Busca casos legales relevantes y envía tus propuestas.</li>
+                <li><strong>Conecta:</strong> Comunícate con clientes y gestiona los detalles del caso.</li>
+            </ol>
+        </section>
+    </main>
 
-    <!-- Pie de Página -->
     <footer>
         <p>© 2025 NEIBA. Todos los derechos reservados.</p>
         <nav>
@@ -82,3 +80,4 @@
 </body>
 
 </html>
+

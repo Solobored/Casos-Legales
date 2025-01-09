@@ -9,24 +9,27 @@
 </head>
 
 <body>
-    <!-- Marca -->
-    <div class="brand-section">
-        <h1>NEIBA</h1>
+    <div class="top-bar">
+        <div class="login">
+            <a href="index.html">Volver al Inicio</a>
+        </div>
+        <div class="brand">
+            <h1>NEIBA</h1>
+        </div>
     </div>
 
-    <!-- Sección de Inicio de Sesión -->
     <main>
-        <section class="login-section">
+        <section class="hero">
             <h1>Iniciar Sesión</h1>
             <p>Elige tu rol para acceder a la plataforma.</p>
+        </section>
 
-            <!-- Opciones de rol -->
+        <section>
             <div class="role-selection">
                 <button id="client-btn" class="btn">Soy Cliente</button>
                 <button id="lawyer-btn" class="btn">Soy Abogado</button>
             </div>
 
-            <!-- Formulario de Cliente -->
             <form id="client-form" action="procesar_login_cliente.php" method="POST" class="login-form" style="display: none;">
                 <h2>Inicio de Sesión - Cliente</h2>
                 <label for="client-email">Correo Electrónico:</label>
@@ -42,7 +45,6 @@
                 </div>
             </form>
 
-            <!-- Formulario de Abogado -->
             <form id="lawyer-form" action="procesar_login_abogado.php" method="POST" class="login-form" style="display: none;">
                 <h2>Inicio de Sesión - Abogado</h2>
                 <label for="lawyer-email">Correo Electrónico:</label>
@@ -60,13 +62,11 @@
         </section>
     </main>
 
-    <!-- Pie de Página -->
     <footer>
         <p>© 2025 NEIBA. Todos los derechos reservados.</p>
     </footer>
 
     <script>
-        // Mostrar y ocultar formularios según el rol seleccionado
         document.getElementById("client-btn").addEventListener("click", function () {
             document.getElementById("client-form").style.display = "block";
             document.getElementById("lawyer-form").style.display = "none";
@@ -80,3 +80,4 @@
 </body>
 
 </html>
+
