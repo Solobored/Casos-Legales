@@ -1,97 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEIBA - Plataforma Legal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>NeiFe - Plataforma Legal</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
-<body>
-    <div class="top-bar">
-        <div class="login">
-            <a href="login.html">Iniciar Sesión</a>
-        </div>
-        <div class="brand">
-            <h1>NEIBA</h1>
-        </div>
+<body class="index-page">
+    <div id="loading-screen">
+        <img src="images/Home.svg" alt="NeiFe Logo" class="loading-logo">
     </div>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="clientes.html">Soy Cliente</a></li>
-                <li><a href="abogados.html">Soy Abogado</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="selected-nav" id="selectedNav">Inicio</div>
-    </header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/Homesmall.png" alt="NeiFe Logo" height="100">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="soy-cliente.html">Soy Cliente</a>
+            <a href="soy-abogado.html">Soy Abogado</a>
+            <a href="contacto.html">Contacto</a>
+            <button onclick="openLoginModal()" class="login-btn">Iniciar sesión</button>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
 
-    <main>
-        <section class="hero">
-            <h1>Conectando Clientes con Abogados Profesionales</h1>
-            <p>Describe tu caso, encuentra al abogado ideal, y obtén ayuda legal en línea.</p>
-            <a href="registro.html" class="btn">Regístrate Ahora</a>
-        </section>
-
-        <section>
-            <h2 class="section-title">Cómo Funciona</h2>
-            <div class="steps">
-                <div class="step">
-                    <h3>1. Regístrate</h3>
-                    <p>Crea tu perfil como cliente o abogado de forma rápida y sencilla.</p>
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-item">
+                    <h2>¿Tienes un caso legal que resolver?</h2>
+                    <p>Describe tu caso y abogados profesionales se contactarán contigo.</p>
+                    <a href="soy-cliente.html" class="cta-button">Para Clientes</a>
                 </div>
-                <div class="step">
-                    <h3>2. Describe tu Caso</h3>
-                    <p>Los clientes pueden detallar sus necesidades legales para encontrar al abogado perfecto.</p>
-                </div>
-                <div class="step">
-                    <h3>3. Conéctate</h3>
-                    <p>Los abogados seleccionan casos, y la comunicación se gestiona de forma segura en la plataforma.</p>
+                <div class="hero-item">
+                    <h2>¿Buscas casos legales para resolver?</h2>
+                    <p>Conecta con clientes reales y amplía tu práctica legal.</p>
+                    <a href="soy-abogado.html" class="cta-button">Para Abogados</a>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2 class="section-title">Beneficios</h2>
-            <div class="benefits">
-                <div class="benefit">
-                    <h3>Para Clientes</h3>
-                    <p>Accede a una amplia red de abogados especializados y recibe asesoría profesional.</p>
-                </div>
-                <div class="benefit">
-                    <h3>Para Abogados</h3>
-                    <p>Encuentra casos relevantes, amplía tu cartera de clientes y gestiona tus casos eficientemente.</p>
-                </div>
+        <section class="features-section">
+            <div class="feature">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Encuentra al abogado ideal para tu caso</h3>
+                <p>Protección y privacidad garantizada</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-comments"></i>
+                <h3>Comunícate con tu abogado de preferencia</h3>
+                <p>De manera presencial u online</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-tasks"></i>
+                <h3>Gestión eficiente de casos</h3>
+                <p>Amplia tu red de clientes</p>
             </div>
         </section>
 
-        <section>
-            <h2 class="section-title">Lo Que Dicen Nuestros Usuarios</h2>
-            <div class="testimonial">
-                <p>"Gracias a NEIBA, encontré un abogado especializado en contratos que resolvió mi problema rápidamente."</p>
-                <p><strong>- Juan Pérez</strong></p>
+        <section class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Cómo funciona NeiFe?</h3>
+                <p>NeiFe conecta a clientes con abogados de manera eficiente y segura...</p>
             </div>
-            <div class="testimonial">
-                <p>"He ampliado mi red de clientes y gestiono mis casos de manera más eficiente gracias a esta plataforma."</p>
-                <p><strong>- Abogada María López</strong></p>
+            <div class="faq-item">
+                <h3>¿Es seguro compartir mi información legal?</h3>
+                <p>Sí, NeiFe utiliza encriptación de punta a punta para proteger tu información...</p>
             </div>
+            <!-- Más preguntas frecuentes aquí -->
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 NEIBA. Todos los derechos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-                <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
-            </ul>
-        </nav>
-    </footer>
-</body>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Iniciar sesión</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Correo electrónico" required>
+                <input type="password" id="login-password" placeholder="Contraseña" required>
+                <button type="submit" class="submit-btn">Iniciar sesión</button>
+                <div class="form-links">
+                    <a href="#" onclick="showForgotPassword()">Olvidé contraseña</a>
+                    <a href="#" onclick="showForgotEmail()">Olvidé qué correo utilicé</a>
+                </div>
+            </form>
+        </div>
+    </div>
 
+    <script src="scripts/script.js"></script>
+</body>
 </html>
 
